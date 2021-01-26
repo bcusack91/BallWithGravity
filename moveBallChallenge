@@ -1,0 +1,63 @@
+<div id="ball" style="
+  z-index:5;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:green"></div>
+
+<script>
+
+var ball = document.getElementById('ball');
+var velocity = 2;
+var velocityY = 0;
+var positionX = 0;
+var positionY = 0;
+var reverse = false;
+var Yreverse = false;
+
+// YOUR CODE 
+// ----------------
+function myFunction() {
+  var Xmin = 0;
+  var Xmax = 1500;
+  if (reverse === false) {
+  positionX = positionX + velocity;
+  ball.style.left = positionX + "px";
+}
+
+ if (reverse === true) {
+  positionX = positionX - velocity;
+  ball.style.left = positionX + "px";
+  }
+
+  if (positionX === Xmin || positionX === Xmax) {
+    reverse = !reverse;
+  }
+
+  // two fixed y-axis coordinates (you will use these variables later)
+  var Ymin = 0;
+  var Ymax = 800;
+
+  if (Yreverse === false) {
+  velocityY = velocityY + .01;
+  positionY = positionY + velocityY;
+  ball.style.top = positionY + "px";
+}
+
+ if (Yreverse === true) {
+  velocityY = velocityY - .01;
+  positionY = positionY - velocityY;
+  ball.style.top = positionY + "px";
+  velocityY = velocityY + .01;
+  }
+
+  if (positionY <= Ymin || positionY >= Ymax) {
+    Yreverse = !Yreverse;
+  }
+}
+
+setInterval(myFunction, 2);
+</script>
