@@ -1,7 +1,7 @@
 #Ball With Gravity
 
-<b>Title of the project:</b> Ball With Gravity
-<b>Description of the project:</b> In this project, I added a gravitational component to the bouncing ball simulation. To do this, I caused the ball to lose 10% of the magnitude of its vertical and horizontal momentum every time it hit a wall. 
+<b>Title of the project:</b> Ball With Gravity <br>
+<b>Description of the project:</b> In this project, I added a gravitational component to the bouncing ball simulation. To do this, I caused the ball to lose 10% of the magnitude of its vertical and horizontal momentum every time it hit a wall. <br>
 <b>Roadmap of future improvements:</b> This ball with gravity project could be the beginning of a much larger physics simulator that could be used to demonstrate to students the trajectory of a ball.  We could add in options to change the gravitational constant, momentum lost upon colliding with the wall, and a tracker of kinetic and potential energy.  A play/pause button would also be quite helpful. 
 
 License information: Copyright <2021> <MIT/Brendan Cusack>
